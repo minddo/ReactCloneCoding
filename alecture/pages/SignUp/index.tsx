@@ -1,6 +1,6 @@
 import useInput from '@hooks/useInput';
 import fetcher from '@utils/fetcher';
-import React, { useCallback, useState, VFC } from 'react';
+import React, { useCallback, useState } from 'react';
 import axios from 'axios';
 import useSWR from 'swr';
 import { Success, Form, Error, Label, Input, LinkContainer, Button, Header } from './styles';
@@ -65,7 +65,7 @@ const SignUp = () => {
   }
 
   if (data) {
-    return <Redirect to="/workspace/sleact/channel/일반" />;
+    return <Redirect to="/workspace/channel" />;
   }
 
   return (
